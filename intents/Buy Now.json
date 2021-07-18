@@ -1,0 +1,128 @@
+{
+  "id": "a081cf6b-5890-4d17-aed7-93c6c0e96a25",
+  "name": "Buy Now",
+  "auto": true,
+  "contexts": [
+    "price_pay"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "9a05c291-459e-436f-b0fe-e5c8a98e0707",
+          "name": "number",
+          "required": false,
+          "dataType": "@sys.number",
+          "value": "$number",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "6e10109d-471c-46db-9031-777b5f979207",
+          "name": "given-name",
+          "required": true,
+          "dataType": "@sys.given-name",
+          "value": "$given-name",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Let me just take your info. May I know your name?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "a9bffb6b-9b0f-4f2b-a7fb-75df116f9a71",
+          "name": "email",
+          "required": true,
+          "dataType": "@sys.email",
+          "value": "$email",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Fine, please provide your 📧email and 📱phone number for contacting"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "7e2e680d-4cd4-4bfc-90dd-5f9db4a528e6",
+          "name": "phone-number",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "value": "$phone-number",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please provide your phone number for contacting."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "c231929b-ff07-4fd5-9abd-4ad909cb1846",
+          "name": "address",
+          "required": true,
+          "dataType": "@sys.address",
+          "value": "$address",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Finally your 🏠address to deliver the order!"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Awesome😃 Your order is booked. You\u0027ll get a confirmation message soon!"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
